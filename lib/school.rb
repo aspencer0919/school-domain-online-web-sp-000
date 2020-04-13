@@ -5,4 +5,7 @@ class School
     @roster = {}
   end
 
+  attr_reader :name, :roster
+
 end
+

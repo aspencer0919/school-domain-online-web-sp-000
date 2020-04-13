@@ -1,5 +1,4 @@
 class School
-
   def initialize(school_name)
     @name = name
     @roster = {}
@@ -11,13 +10,13 @@ class School
     @roster[grade]
   end
 
- def sort()
+  def sort()
     return_hash = {}
     @roster.each do |k,v|
       return_hash[k] = v.sort
     end
     return_hash
-end
+  end
 
   def add_student(name,grade)
     if @roster.include?(grade)

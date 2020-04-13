@@ -4,13 +4,13 @@ class School
     @name = name
     @roster = {}
   end
-  
+
   attr_reader :name, :roster
-  
+
   def grade(grade)
     @roster[grade]
   end
-  
+
  def sort()
     return_hash = {}
     @roster.each do |key,value|
@@ -18,7 +18,7 @@ class School
     end
     return_hash
 end
-  
+
   def add_student(name,grade)
     if @roster.include?(grade)
       @roster[grade]<<name
